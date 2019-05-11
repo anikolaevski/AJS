@@ -1,9 +1,9 @@
-"use strict"
-console.log('Привет!');
+// "use strict"
+// console.log('Привет!');
 console.log('Task#2');
 function showBalance (balance) {
-  let valTen = balance % 10;
-  let valTeen = balance % 100;
+  const valTen = balance % 10;
+  const valTeen = balance % 100;
   let textVal = 'баллов';
   if(!(valTeen >= 11 && valTeen <= 19)) {
     switch(valTen) {
