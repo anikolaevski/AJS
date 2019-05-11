@@ -1,6 +1,3 @@
-// "use strict"
-// console.log('Привет!');
-console.log('Task#2');
 function showBalance (balance) {
   const valTen = balance % 10;
   const valTeen = balance % 100;
@@ -24,7 +21,13 @@ function showBalance (balance) {
   return textVal;
 }
 
-[523, 6000, 5001, 5013, 9999].forEach(
-  (element) => 
-  {console.log(`Ваш баланс: ${element} ${showBalance(element)}`)}
-);
+// [523, 6000, 5001, 5013, 9999].forEach(
+//   (element) => 
+//   {console.log(`Ваш баланс: ${element} ${showBalance(element)}`)}
+// );
+
+console.log('Task#2');
+for (let val of [523, 6000, 5001, 5013, 9999]) {
+  console.log(`Ваш баланс: ${val} ${showBalance(val)}`);
+};
+
