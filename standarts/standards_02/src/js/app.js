@@ -18,16 +18,11 @@ function showBalance (balance) {
         break;
     }
   }
-  return textVal;
+  return `Ваш баланс: ${balance} ${textVal}`;
 }
-
-// [523, 6000, 5001, 5013, 9999].forEach(
-//   (element) => 
-//   {console.log(`Ваш баланс: ${element} ${showBalance(element)}`)}
-// );
 
 console.log('Task#2');
 for (let val of [523, 6000, 5001, 5013, 9999]) {
-  console.log(`Ваш баланс: ${val} ${showBalance(val)}`);
+  console.log(`${showBalance(val)}`);
 };
 
