@@ -1,4 +1,5 @@
-function showBalance (balance) {
+function showBalance (strings, balance) {
+  const str1 = strings[0];
   const valTen = balance % 10;
   const valTeen = balance % 100;
   let textVal = 'баллов';
@@ -18,11 +19,11 @@ function showBalance (balance) {
         break;
     }
   }
-  return `Ваш баланс: ${balance} ${textVal}`;
+  return `${str1}${balance} ${textVal}`;
 }
 
 console.log('Task#2');
 for (let val of [523, 6000, 5001, 5013, 9999]) {
-  console.log(`${showBalance(val)}`);
+  console.log(showBalance`Ваш баланс: ${val}`);
 };
 
